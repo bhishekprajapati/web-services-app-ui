@@ -1,0 +1,14 @@
+:root {
+    // Color properties -> start
+    @each $color-prop-name, $color-value in $light-theme-colors {
+        --c-l-th-#{$color-prop-name}: #{$color-value};
+    }
+    @each $color-prop-name, $color-value in $dark-theme-colors {
+        --c-d-th-#{$color-prop-name}: #{$color-value};
+    }
+    // Color properties -> end
+
+    // Font properties -> start
+    --font-primary: 'Red Hat Display', sans-serif;
+    // Font properties -> end
+}

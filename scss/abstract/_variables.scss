@@ -1,0 +1,76 @@
+// Colors -> start
+$color-green-1: #DEFFE5;
+$color-green-2: #50D86A;
+
+$color-red-1: #FFCECE;
+$color-red-2: #E24444;
+
+$color-orange-1: #FFF6DE;
+$color-orange-2: #FFA10B;
+
+$color-violet-1: #F1DEFF;
+$color-violet-2: #A86CE4;
+
+$color-gray-1: #EAEDF2;
+$color-gray-2: #E5E5E5;
+$color-gray-3: #E0E4EA;
+$color-gray-4: #DDE1E8;
+$color-gray-5: #A6ADB1;
+$color-gray-6: #5F5F6E;
+
+$color-black-1: #2D2D3A;
+$color-black-2: #282B31;
+$color-black-3: #1C1C24;
+$color-black-4: #131419;
+
+$color-white: #fff;
+
+$color-blue: #1750FF;
+$color-purple: #4447E2;
+
+$light-theme-colors: (
+    "body-bg": $color-gray-1,
+    "primary": $color-blue,
+    "text-primary": $color-black-2,
+    "text-secondary": $color-gray-6,
+    "border-primary": $color-blue,
+    "border-secondary": $color-gray-4,
+    "icon-active": $color-black-2, 
+    "icon-hovered": $color-gray-4, 
+    "icon-disabled": $color-gray-5, 
+);
+
+$dark-theme-colors: (
+    "body-bg": $color-black-4,
+    "primary": $color-purple,
+    "text-primary": $color-white,
+    "text-secondary": $color-gray-6,
+    "border-primary": $color-purple,
+    "border-secondary": $color-black-1, 
+    "icon-active": $color-white, 
+    "icon-hovered": $color-gray-4, 
+    "icon-disabled": $color-gray-5, 
+);
+// Colors -> end
+
+// Media query variables -> start
+$up-breakpoints: ( 
+    "xxs": px-to-em(425px), 
+    "xs": px-to-em(576px), 
+    "sm": px-to-em(768px), 
+    "md": px-to-em(1024px),
+    "lg": px-to-em(1200px), 
+    "xl": px-to-em(1440px), 
+    "xxl": px-to-em(1920px), 
+);
+
+$down-breakpoints: ( 
+    "xxs": px-to-em(425px - 0.01px), 
+    "xs": px-to-em(576px - 0.01px), 
+    "sm": px-to-em(768px - 0.01px), 
+    "md": px-to-em(1024px - 0.01px),
+    "lg": px-to-em(1200px - 0.01px), 
+    "xl": px-to-em(1440px - 0.01px), 
+    "xxl": px-to-em(1920px - 0.01px), 
+);
+// Media query variables -> end

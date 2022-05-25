@@ -1,0 +1,12 @@
+// fallback theme -> light theme
+.light-theme {
+    @each $color-prop-name, $color-value in $light-theme-colors {
+        --c-th-#{$color-prop-name}: var(--c-l-th-#{$color-prop-name});
+    }
+}
+
+.dark-theme {
+    @each $color-prop-name, $color-value in $dark-theme-colors {
+        --c-th-#{$color-prop-name}: var(--c-d-th-#{$color-prop-name});
+    }
+}

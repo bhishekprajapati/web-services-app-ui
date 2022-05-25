@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    all: unset;
+    box-sizing: inherit;
+}
+
+html, body,
+header, nav, main, aside, section, article, address, footer,
+div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+hr, form {
+    display: block;
+}
+
+head, title, script {
+    display: none;
+}
+
+img, span, a, button, input {
+    display: inline-block;
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: $color-gray-1;
+    background-color: var(--c-th-body-bg, $color-gray-1);
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: var(--font-primary, 'Red Hat Display', sans-serif);
+    scroll-behavior: smooth;
+    user-select: none;
+}

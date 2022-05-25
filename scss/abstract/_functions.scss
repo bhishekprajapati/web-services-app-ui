@@ -1,0 +1,12 @@
+@use "sass:meta";
+@use "sass:math";
+
+@function px-to-em($value-in-pixels) {
+    $p: math.div($value-in-pixels, 1px);
+    @return math.div($p, 16) * 1em ;
+}
+
+@function px-to-rem($value-in-pixels) {
+    $p: math.div($value-in-pixels, 1px);
+    @return math.div($p, 16) * 1rem ;
+}

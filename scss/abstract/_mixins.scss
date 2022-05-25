@@ -1,0 +1,34 @@
+// Media queries start 
+@use "sass:map";
+
+@mixin up-media($bp) {
+    $bp-value: map.get($up-breakpoints, $bp);
+    @debug $bp-value;
+    @if $bp-value != null{
+        @media screen and (min-width: $bp-value) {
+            @content;
+        }
+    } @else {
+        @error 'Media query break point: #{$bp} doesn\'t exists!';
+    }
+}
+
+@mixin down-media($bp) {
+    $bp-value: map.get($down-breakpoints, $bp);
+    @if $bp-value != null{
+        @media screen and (max-width: $bp-value) {
+            @content;
+        }
+    } @else {
+        @error 'Media query break point: #{$bp} doesn\'t exists!';
+    }
+}
+// Media queries end 
+
+// Typography start
+@mixin set-typography($fs, $lh, $fw) {
+    font-size: px-to-rem($fs);
+    line-height: px-to-rem($lh);
+    font-weight: $fw;
+}
+// Typography end
