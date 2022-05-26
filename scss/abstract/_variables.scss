@@ -31,6 +31,15 @@ $color-purple: #4447E2;
 $light-theme-colors: (
     "body-bg": $color-gray-1,
     "primary": $color-blue,
+
+    "btn-text": $color-black-2,
+    "btn-primary-bg": $color-blue,
+    "btn-secondary-bg": $color-gray-4,
+    "btn-outlined-primary-border": $color-blue,
+    "btn-outlined-secondary-border": $color-gray-4,
+
+    "card-bg": $color-white,
+    
     "text-primary": $color-black-2,
     "text-secondary": $color-gray-6,
     "border-primary": $color-blue,
@@ -43,6 +52,15 @@ $light-theme-colors: (
 $dark-theme-colors: (
     "body-bg": $color-black-4,
     "primary": $color-purple,
+
+    "btn-text": $color-white,
+    "btn-primary-bg": $color-purple,
+    "btn-secondary-bg": $color-black-1,
+    "btn-outlined-primary-border": $color-purple,
+    "btn-outlined-secondary-border": $color-black-1,
+
+    "card-bg": $color-black-3,
+    
     "text-primary": $color-white,
     "text-secondary": $color-gray-6,
     "border-primary": $color-purple,

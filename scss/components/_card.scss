@@ -1,0 +1,8 @@
+.card {
+    background-color: var(--c-th-card-bg);
+    transition: background-color 200ms;
+
+    &-rounded {
+        border-radius: px-to-rem(15px);
+    }
+}

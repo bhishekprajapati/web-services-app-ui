@@ -1,0 +1,49 @@
+// btn sizes
+.btn {
+    --btn-transition-duration: 200ms;
+    
+    color: var(--c-th-btn-text);
+    padding: px-to-em(10px) px-to-em(35px);
+    @include set-typography(px-to-rem(12px), px-to-rem(20px), 500);
+    border-radius: px-to-rem(15px);
+    transition: background-color var(--btn-transition-duration), color var(--btn-transition-duration);
+
+    &-sm {
+        padding: px-to-em(10px) px-to-em(20px);
+        @include set-typography(px-to-rem(14px), px-to-rem(20px), 500);
+    }
+
+    &-md {
+        padding: px-to-em(15px) px-to-em(20px);
+        @include set-typography(px-to-rem(16px), px-to-rem(20px), 500);
+    }
+}
+
+// btn skins
+.btn {
+    &-primary {
+        background-color: var(--c-th-btn-primary-bg);
+    }
+
+    &-secondary {
+        background-color: var(--c-th-btn-secondary-bg);
+    }
+
+    &-outlined {
+        background-color: transparent;
+        border-width: px-to-rem(1px);
+        border-style: solid;
+    
+        &-primary {
+            border-color: var(--c-th-btn-outlined-primary-border);
+        }
+
+        &-secondary {
+            border-color: var(--c-th-btn-outlined-secondary-border);
+        }
+
+        &--thick {
+            border-width: px-to-rem(2px);
+        }
+    }
+}
