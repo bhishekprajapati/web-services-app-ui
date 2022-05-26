@@ -1,0 +1,5 @@
+@each $shadow-name, $shadow-value in $shadows {
+    .shadow-#{$shadow-name} {
+        filter: $shadow-value;
+    }
+}
