@@ -53,6 +53,23 @@ $dark-theme-colors: (
 );
 // Colors -> end
 
+// Typograpgy -> start
+$typography: (
+    "fs-1": (px-to-rem(34px), px-to-rem(24px), 500), // (font-size, line-height, font-weight)
+    "fs-2": (px-to-rem(26px), px-to-rem(20px), 500),
+    "fs-3": (px-to-rem(24px), px-to-rem(20px), 500),
+    "fs-4": (px-to-rem(22px), px-to-rem(20px), 500),
+    "fs-5": (px-to-rem(20px), px-to-rem(24px), 500),
+    "fs-6": (px-to-rem(18px), px-to-rem(20px), 500),
+    "fs-7": (px-to-rem(16px), px-to-rem(20px), 500),
+    "fs-8": (px-to-rem(14px), px-to-rem(20px), 500),
+    "fs-9": (px-to-rem(12px), px-to-rem(20px), 500),
+    "fs-10": (px-to-rem(10px), px-to-rem(20px), 500),
+);
+
+$font-weight: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+// Typograpgy -> end
+
 // Media query variables -> start
 $up-breakpoints: ( 
     "xxs": px-to-em(425px), 
