@@ -1,3 +1,5 @@
+@import '../vendor/svg-uri';
+
 :root {
     // Color properties -> start
     @each $color-prop-name, $color-value in $light-theme-colors {
@@ -6,7 +8,38 @@
     @each $color-prop-name, $color-value in $dark-theme-colors {
         --c-d-th-#{$color-prop-name}: #{$color-value};
     }
+
+    @each $color-prop-name, $color-value in $common-colors {
+        --c-th-#{$color-prop-name}: #{$color-value};
+    }
     // Color properties -> end
+
+    // Icon properties -> start
+
+    @each $stateless-icon-name, $stateless-icon-values in $stateless-theme-icons {
+        @each $theme-name, $theme-icon in $stateless-icon-values {
+            @if $theme-name == "light" {
+                --i-l-th-#{$stateless-icon-name}: #{svg-uri($theme-icon)}; 
+            } @else if $theme-name == "dark" {
+                --i-d-th-#{$stateless-icon-name}: #{svg-uri($theme-icon)}; 
+            }
+        }
+    }
+
+    @each $statefull-icon-name, $statefull-icon-values in $statefull-theme-icons {
+        @each $state-name, $theme-icon in $statefull-icon-values {
+            @if $state-name == "base" {
+                --i-base-th-#{$statefull-icon-name}: #{svg-uri($theme-icon)};
+            }
+            @else if $state-name == "light-active" {
+                --i-active-l-th-#{$statefull-icon-name}: #{svg-uri($theme-icon)};
+            }
+            @else if $state-name == "dark-active" {
+                --i-active-d-th-#{$statefull-icon-name}: #{svg-uri($theme-icon)};
+            }
+        }
+    }
+    // Icon properties -> end
 
     // Font properties -> start
     --font-primary: 'Red Hat Display', sans-serif;

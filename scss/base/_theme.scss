@@ -1,12 +1,44 @@
 // fallback theme -> light theme
 .light-theme {
     @each $color-prop-name, $color-value in $light-theme-colors {
-        --c-th-#{$color-prop-name}: var(--c-l-th-#{$color-prop-name});
+        --c-th-#{$color-prop-name}: var(--c-l-th-#{$color-prop-name}); // scoped to the root to change body tag variables
+    }
+
+    @each $stateless-icon-name, $stateless-icon-values in $stateless-theme-icons {
+        @each $theme-name, $theme-icon in $stateless-icon-values {
+            @if $theme-name == "light" {
+                --i-th-#{$stateless-icon-name}: var(--i-l-th-#{$stateless-icon-name}); // scoped to the root to change body tag variables
+            }
+        }
+    }
+
+    @each $statefull-icon-name, $statefull-icon-values in $statefull-theme-icons {
+        @each $state-name, $theme-icon in $statefull-icon-values {
+            @if $state-name == "light-active"  {
+                --i-active-th-#{$statefull-icon-name}: var(--i-active-l-th-#{$statefull-icon-name});
+            }
+        }
     }
 }
 
 .dark-theme {
     @each $color-prop-name, $color-value in $dark-theme-colors {
         --c-th-#{$color-prop-name}: var(--c-d-th-#{$color-prop-name});
+    }
+
+    @each $stateless-icon-name, $stateless-icon-values in $stateless-theme-icons {
+        @each $theme-name, $theme-icon in $stateless-icon-values {
+            @if $theme-name == "dark" {
+                --i-th-#{$stateless-icon-name}: var(--i-d-th-#{$stateless-icon-name}); // scoped to the root to change body tag variables
+            }
+        }
+    }
+
+    @each $statefull-icon-name, $statefull-icon-values in $statefull-theme-icons {
+        @each $state-name, $theme-icon in $statefull-icon-values {
+            @if $state-name == "dark-active"  {
+                --i-active-th-#{$statefull-icon-name}: var(--i-active-d-th-#{$statefull-icon-name});
+            }
+        }
     }
 }

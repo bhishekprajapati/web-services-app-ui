@@ -9,9 +9,9 @@
   "scripts": {
     "build-sass": "sass ./scss/main.scss ./css/style.css -w",
     "optimize-all-svgs": "yarn optimize-statefull-svgs && yarn optimize-stateless-svgs && yarn optimize-stateless-and-themeless-svgs",
-    "optimize-statefull-svgs": "svgo -f ./assets/icons/statefull -o ./assets/icons/optimized/statefull",
-    "optimize-stateless-svgs": "svgo -f ./assets/icons/stateless -o ./assets/icons/optimized/stateless",
-    "optimize-stateless-and-themeless-svgs": "svgo -f ./assets/icons/stateless-and-themeless -o ./assets/icons/optimized/stateless-and-themeless"
+    "optimize-statefull-svgs": "svgo -f ./assets/icons/statefull -o ./assets/icons-min/statefull",
+    "optimize-stateless-svgs": "svgo -f ./assets/icons/stateless -o ./assets/icons-min/stateless",
+    "optimize-stateless-and-themeless-svgs": "svgo -f ./assets/icons/stateless-and-themeless -o ./assets/icons-min/stateless-and-themeless"
   },
   "devDependencies": {
     "sass": "^1.52.1",
