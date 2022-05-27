@@ -7,9 +7,14 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build-sass": "sass ./scss/main.scss ./css/style.css -w"
+    "build-sass": "sass ./scss/main.scss ./css/style.css -w",
+    "optimize-all-svgs": "yarn optimize-statefull-svgs && yarn optimize-stateless-svgs && yarn optimize-stateless-and-themeless-svgs",
+    "optimize-statefull-svgs": "svgo -f ./assets/icons/statefull -o ./assets/icons/optimized/statefull",
+    "optimize-stateless-svgs": "svgo -f ./assets/icons/stateless -o ./assets/icons/optimized/stateless",
+    "optimize-stateless-and-themeless-svgs": "svgo -f ./assets/icons/stateless-and-themeless -o ./assets/icons/optimized/stateless-and-themeless"
   },
   "devDependencies": {
-    "sass": "^1.52.1"
+    "sass": "^1.52.1",
+    "svgo": "^2.8.0"
   }
 }
