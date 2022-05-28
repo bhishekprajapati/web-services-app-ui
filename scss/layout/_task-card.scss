@@ -1,0 +1,60 @@
+.l-task-card {
+    width: rounded-div(165, 375)*100%;
+    margin: 2% auto;
+    min-width: rounded-div(165, 12)*1em;
+    max-width: rounded-div(165, 12)*1em;
+    font-size: clamp(px-to-rem(12px), rounded-div(12, 375)*100vw, px-to-rem(16px));
+    font-weight: 500;
+    padding: rounded-div(15, 12)*1em rounded-div(10, 12)*1em;
+
+    &__header{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__avatar-wrapper {
+        $length: rounded-div(30, 12)*1em;
+        min-width: $length;
+        min-height: $length;
+        max-width: $length;
+        max-height: $length;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: rounded-div(5, 12)*1em;
+        position: relative;
+    }
+
+    &__avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__user-info-wrapper {
+        min-width: rounded-div(86, 165)*100%;
+    }
+
+    &__username {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__more-options {
+        width: rounded-div(14, 12)*1em;
+        height: rounded-div(14, 12)*1em;
+    }
+
+    &__task-thumbnail {
+        width: rounded-div(145, 12)*1em;
+        height: rounded-div(107, 12)*1em;
+        border-radius: px-to-rem(15px);
+        object-fit: cover;
+        margin: rounded-div(15, 12)*1em 0;
+    }
+
+    &__btn {
+        --pad: #{rounded-div(15, 12)*1em} 0;
+    }
+}

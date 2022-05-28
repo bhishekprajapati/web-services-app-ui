@@ -1,0 +1,30 @@
+// layout
+.link {
+    @include set-typography(16px, 20px, 500);
+}
+
+.link-icon {
+    vertical-align: bottom;
+}
+
+// skin
+.link {
+    color: var(--c-th-link-disabled);
+
+    &.is-active {
+        color: var(--c-th-link-active);
+
+        & .link-icon {
+            filter: var(--c-th-link-icon-active);
+        }
+    }
+
+    &.is-danger {
+        color: var(--c-th-danger-2);
+
+        & .link-icon {
+            filter: invert(48%) sepia(72%) saturate(3473%) hue-rotate(333deg) brightness(75%) contrast(94%);;
+        }
+    }
+}
+// state

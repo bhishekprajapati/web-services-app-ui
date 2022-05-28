@@ -53,8 +53,8 @@ $light-theme-colors: (
     "link-active": $color-black-2,
     "link-icon-active": brightness(0) invert(11%) sepia(6%) saturate(1771%) hue-rotate(182deg) brightness(90%) contrast(83%),
     
-    "task-card-title": $color-black-2,
-    "task-card-sub-title": $color-gray-5,
+    "task-card-username": $color-black-2,
+    "task-card-user-action": $color-gray-5,
     
     "text-primary": $color-black-2,
     "text-secondary": $color-gray-6,
@@ -81,8 +81,8 @@ $dark-theme-colors: (
     "link-active": $color-white,
     "link-icon-active": brightness(0) invert(1),
 
-    "task-card-title": $color-white,
-    "task-card-sub-title": $color-gray-6,
+    "task-card-username": $color-white,
+    "task-card-user-action": $color-gray-6,
 
     
     "text-primary": $color-white,

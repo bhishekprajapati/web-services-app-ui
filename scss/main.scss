@@ -8,8 +8,13 @@
 @import './base/theme';
 @import './base/reset';
 @import './base/typography';
+@import './base/icons';
+
+@import './layout/task-card';
 
 @import './components/buttons';
 @import './components/card';
+@import './components/links';
+@import './components/task-card';
 
 @import './utils/shadows';

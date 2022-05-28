@@ -1,0 +1,20 @@
+@use "sass:math";
+
+.task-card {
+
+    &__username {
+        color: var(--c-th-task-card-username);
+    }
+
+    &__user-action {
+        color: var(--c-th-task-card-user-action);
+    }
+
+    &__btn {
+        padding: var(--pad);
+    }
+
+    .i-more-vertical:hover {
+        cursor: pointer;
+    }
+}
