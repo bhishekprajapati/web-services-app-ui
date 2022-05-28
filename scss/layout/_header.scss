@@ -1,0 +1,52 @@
+.l-primary-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: min(px-to-rem(25px), rounded-div(11, 375)*100%) 
+             min(px-to-rem(110px), rounded-div(15, 375)*100%);
+
+    &__nav {
+        // white-space: nowrap;
+        display: none;
+        
+        & > .link {
+            margin: 0 10%;
+        }
+
+        @include up-media("sm") {
+            display: block;
+        }
+    }
+
+    &__add-points {
+        padding: 2%;
+        border-radius: px-to-rem(15px);
+    }
+
+    &__user-balance {
+        padding: px-to-rem(5px);
+    }
+
+    &__user-dp-wrapper {
+        margin: 0 1% 0 2%;
+    }
+}
+
+.l-secondary-header {
+    width: 100%;
+    padding: min(2% + .5rem, 1rem) min(2% + .5rem, 2rem);
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 10%;
+        text-align: center;
+    }
+
+    @include up-media("sm") {
+        display: none;
+    }
+}

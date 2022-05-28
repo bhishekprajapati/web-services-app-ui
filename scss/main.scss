@@ -10,8 +10,10 @@
 @import './base/typography';
 @import './base/icons';
 
+@import './layout/header';
 @import './layout/task-card';
 
+@import './components/header';
 @import './components/buttons';
 @import './components/card';
 @import './components/links';

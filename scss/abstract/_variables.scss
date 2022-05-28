@@ -41,6 +41,11 @@ $light-theme-colors: (
     "body-bg": $color-gray-1,
     "primary": $color-blue,
 
+    "header-bg": $color-white,
+    "header-border": #E0E0EC,
+
+    "user-balance-badge-bg": $color-gray-4,
+
     "btn-text": $color-black-2,
     "btn-primary-bg": $color-blue,
     "btn-secondary-bg": $color-gray-4,
@@ -68,6 +73,11 @@ $light-theme-colors: (
 $dark-theme-colors: (
     "body-bg": $color-black-4,
     "primary": $color-purple,
+
+    "header-bg": $color-black-3,
+    "header-border": #262631,
+
+    "user-balance-badge-bg": $color-black-1,
 
     "btn-text": $color-white,
     "btn-primary-bg": $color-purple,
@@ -148,6 +158,11 @@ $stateless-theme-icons: (
     "close": (
         "light": '<svg width="23" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m14.142 8.229-2.828 2.828L8.485 8.23a.666.666 0 1 0-.943.943L10.371 12l-2.829 2.828a.666.666 0 1 0 .943.943l2.829-2.828 2.828 2.828a.666.666 0 1 0 .943-.943L12.256 12l2.829-2.828a.666.666 0 1 0-.943-.943" fill="#231F20"/><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="8" width="9" height="8"><path fill-rule="evenodd" clip-rule="evenodd" d="m14.142 8.229-2.828 2.828L8.485 8.23a.666.666 0 1 0-.943.943L10.371 12l-2.829 2.828a.666.666 0 1 0 .943.943l2.829-2.828 2.828 2.828a.666.666 0 1 0 .943-.943L12.256 12l2.829-2.828a.666.666 0 1 0-.943-.943" fill="#fff"/></mask><g mask="url(#a)"><path fill="#282B31" d="M0 12 11.314.686 22.627 12 11.314 23.314z"/></g></svg>',
         "dark": '<svg width="23" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m14.142 8.229-2.828 2.828L8.485 8.23a.666.666 0 1 0-.943.943L10.371 12l-2.829 2.828a.666.666 0 1 0 .943.943l2.829-2.828 2.828 2.828a.666.666 0 1 0 .943-.943L12.256 12l2.829-2.828a.666.666 0 1 0-.943-.943" fill="#5F5F6E"/><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="8" width="9" height="8"><path fill-rule="evenodd" clip-rule="evenodd" d="m14.142 8.229-2.828 2.828L8.485 8.23a.666.666 0 1 0-.943.943L10.371 12l-2.829 2.828a.666.666 0 1 0 .943.943l2.829-2.828 2.828 2.828a.666.666 0 1 0 .943-.943L12.256 12l2.829-2.828a.666.666 0 1 0-.943-.943" fill="#fff"/></mask><g mask="url(#a)"><path fill="#5F5F6E" d="M0 12 11.314.686 22.627 12 11.314 23.314z"/></g></svg>',
+    ),
+
+    "coin-stack": (
+        "light": '<svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 7.5c2.982 0 6-1.03 6-3s-3.018-3-6-3-6 1.03-6 3 3.018 3 6 3Z" fill="#282B31"/><path d="M3 7.5c0 1.97 3.018 3 6 3s6-1.03 6-3V6c0 1.97-3.018 3-6 3S3 7.97 3 6v1.5Z" fill="#282B31"/><path d="M3 10.5c0 1.97 3.018 3 6 3s6-1.03 6-3V9c0 1.97-3.018 3-6 3s-6-1.03-6-3v1.5Z" fill="#282B31"/><path d="M3 13.5c0 1.97 3.018 3 6 3s6-1.03 6-3V12c0 1.97-3.018 3-6 3s-6-1.03-6-3v1.5Z" fill="#282B31"/></svg>',
+        "dark": '<svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 7.5c2.982 0 6-1.03 6-3s-3.018-3-6-3-6 1.03-6 3 3.018 3 6 3Z" fill="#fff"/><path d="M3 7.5c0 1.97 3.018 3 6 3s6-1.03 6-3V6c0 1.97-3.018 3-6 3S3 7.97 3 6v1.5Z" fill="#fff"/><path d="M3 10.5c0 1.97 3.018 3 6 3s6-1.03 6-3V9c0 1.97-3.018 3-6 3s-6-1.03-6-3v1.5Z" fill="#fff"/><path d="M3 13.5c0 1.97 3.018 3 6 3s6-1.03 6-3V12c0 1.97-3.018 3-6 3s-6-1.03-6-3v1.5Z" fill="#fff"/></svg>',
     ),
 
     "flash": (

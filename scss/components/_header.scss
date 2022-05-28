@@ -1,0 +1,20 @@
+.header-bg {
+    background-color: var(--c-th-header-bg);
+}
+
+
+.l-primary-header {
+    border-bottom: 0.04rem solid var(--c-th-header-border);
+
+    &__add-points {
+        background-color: var(--c-th-primary);
+    }
+
+    &__user-balance{
+        background-color: var(--c-th-user-balance-badge-bg);
+    }
+}
+
+.l-secondary-header {
+    border-top: 0.04rem solid var(--c-th-header-border);
+}
