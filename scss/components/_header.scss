@@ -17,6 +17,14 @@
     }
 }
 
+.user-settings-menu {
+    border: 0.04rem solid var(--c-th-header-border);
+
+    & > .menu-rule {
+        border-top: 0.08rem solid var(--c-th-header-border);
+    }
+}
+
 .l-secondary-header {
     border-top: 0.04rem solid var(--c-th-header-border);
 }

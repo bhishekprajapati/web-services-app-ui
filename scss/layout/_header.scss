@@ -1,8 +1,13 @@
+.site-header {
+    position: relative;
+}
+
 .l-primary-header {
     display: flex;
     align-items: center;
     padding: min(px-to-rem(25px), rounded-div(11, 375)*100%) 
              min(px-to-rem(110px), rounded-div(15, 375)*100%);
+
 
     &__logo {
         // flex: 2%;
@@ -70,9 +75,73 @@
 
     &__user-profile-btn {
         display: none;
+        cursor: pointer;
+        transition: transform ease 200ms;
+
 
         @include up-media("sm") {
             display: inline-block;
+        }
+    }
+}
+
+#user-settings-menu {
+    display: none;
+
+    &:checked {
+
+        & + .l-primary-header__user-profile-btn {
+            transform: rotate(180deg);
+        }
+
+        & ~ .user-settings-menu {
+            display: block;
+        }
+    } 
+}
+
+.user-settings-menu {
+    position: absolute;
+    bottom: 5%;
+    right: 4%;
+    width: 18%;
+    transform: translateY(100%);
+    padding: min(4%, 1rem);
+    display: none;
+
+    & > .menu-item  .icon{
+        vertical-align: middle;
+    }
+}
+
+#theme-toggler {
+    display: none;
+
+    &:checked + .theme-toggle > .theme-toggle__btn::before {
+        background-color: var(--c-th-primary);
+        transform: translateX(180%);
+    }
+}
+
+.theme-toggle {
+    cursor: pointer;
+
+    &__btn {
+        width: 2.4rem;
+        height: 1.2rem;
+        border-radius: 10rem;
+        padding: 2%;
+        margin-left: 25%;
+        background-color: var(--c-th-btn-secondary-bg);
+
+        &::before {
+            content: "";
+            display: block;
+            width: 35%;
+            height: 90%;
+            background-color: #000;
+            border-radius: 50%;
+            transition: transform ease 200ms;
         }
     }
 }
