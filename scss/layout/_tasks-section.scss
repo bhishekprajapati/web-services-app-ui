@@ -1,0 +1,61 @@
+.section-title {
+}
+
+.l-tasks-section {
+    font-size: clamp(px-to-rem(22px), 0.5rem + rounded-div(14, 375)*100vw ,px-to-rem(26px));
+    padding: rounded-div(30, 22)*1em rounded-div(15, 22)*1em;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & > .section-title {
+            font-weight: 500;
+        }
+
+        & .btn {
+            padding: rounded-div(15, 12)*1em;
+            font-size: 0.5em;
+        }
+    }
+
+    &__grid {
+        --gap: 4%;
+        padding: rounded-div(15, 22)*1em 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: var(--gap);
+
+        & > .l-task-card {
+            width: 100%;
+            margin-bottom: var(--gap);
+        }
+
+        @include up-media("xxs") {
+            --gap: 8%;
+        }
+
+        @include up-media("xs") {
+            --gap: 2%;
+            justify-content: flex-start;
+        }
+
+        @include up-media("sm") {
+            --gap: #{rounded-div(5, 375)*100%};
+        }
+
+        @include up-media("md") {
+            --gap: 3.1%;
+        }
+    }
+
+    @include up-media("sm") {
+        padding: rounded-div(30, 22)*1em rounded-div(15, 22)*2.5em;
+    }  
+    
+    @include up-media("md") {
+        padding: rounded-div(30, 22)*1em rounded-div(15, 22)*8em;
+    }   
+}

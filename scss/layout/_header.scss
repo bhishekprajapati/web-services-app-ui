@@ -5,8 +5,8 @@
 .l-primary-header {
     display: flex;
     align-items: center;
-    padding: min(px-to-rem(25px), rounded-div(11, 375)*100%) 
-             min(px-to-rem(110px), rounded-div(15, 375)*100%);
+    font-size: clamp(px-to-rem(22px), 0.5rem + rounded-div(14, 375)*100vw ,px-to-rem(26px));
+    padding: rounded-div(10, 22)*1em rounded-div(15, 22)*1em;
 
 
     &__logo {
@@ -82,6 +82,10 @@
         @include up-media("sm") {
             display: inline-block;
         }
+    }
+
+    @include up-media("sm") {
+        padding: rounded-div(10, 22)*1em rounded-div(15, 22)*2.5em;
     }
 }
 

@@ -1,6 +1,4 @@
 .l-task-card {
-    width: rounded-div(165, 375)*100%;
-    margin: 2% auto;
     min-width: rounded-div(165, 12)*1em;
     max-width: rounded-div(165, 12)*1em;
     font-size: clamp(px-to-rem(12px), rounded-div(12, 375)*100vw, px-to-rem(16px));

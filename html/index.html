@@ -43,7 +43,7 @@
                 </a>
             </nav>
 
-            <span class="l-primary-header__user-balance">
+            <span class="l-primary-header__user-balance fs-7">
                 <a class="l-primary-header__add-points">
                     <span class="icon i-plus"></span>
                 </a>
@@ -63,7 +63,7 @@
                 <span class="icon i-arrow-down"></span>
             </label>
 
-            <div class="user-settings-menu card card-rounded">
+            <div class="user-settings-menu card card-rounded shadow-2">
 
                 <div class="menu-item">
                     <input type="checkbox" onchange="document.body.classList.toggle('dark-theme')" id="theme-toggler">
@@ -117,24 +117,135 @@
         </div>
     </header>
     <main>
-        <div>
-            <article class="card card-rounded l-task-card task-card">
-                <header class="l-task-card__header">
-                    <span data-user-action="like" class="l-task-card__avatar-wrapper task-card__avatar-wrapper">
-                        <img class="l-task-card__avatar" src="../assets/users-dp/user-dp-1.png">
-                    </span>
-                    <div class="l-task-card__user-info-wrapper">
-                        <h3 class="l-task-card__username task-card__username">Tran Mau Tri Tam</h3>
-                        <p class="l-task-card__user-action task-card__user-action">Like</p>
+
+        <section class="l-tasks-section">
+            <header>
+                <h1 class="section-title">Task List</h1>
+                <button type="button" class="btn btn-secondary">+ Create task</button>
+            </header>
+            <div class="l-tasks-section__grid">
+                <article class="card card-rounded l-task-card task-card">
+                    <header class="l-task-card__header">
+                        <span data-user-action="like" class="l-task-card__avatar-wrapper task-card__avatar-wrapper">
+                            <img class="l-task-card__avatar" src="../assets/users-dp/user-dp-1.png">
+                        </span>
+                        <div class="l-task-card__user-info-wrapper">
+                            <h3 class="l-task-card__username task-card__username">Tran Mau Tri Tam</h3>
+                            <p class="l-task-card__user-action task-card__user-action">Like</p>
+                        </div>
+                        <span class="l-task-card__more-options icon i-more-vertical"></span>
+                    </header>
+                    <img class="l-task-card__task-thumbnail" src="../assets/task-thumbnails/task-thumbnail-2.png">
+                    <div class="l-task-card__btn">
+                        <button type="button" class="task-card__btn btn btn-block btn-outlined btn-outlined-primary btn-outlined--thick">Perform Task</button>
                     </div>
-                    <span class="l-task-card__more-options icon i-more-vertical"></span>
-                </header>
-                <img class="l-task-card__task-thumbnail" src="../assets/task-thumbnails/task-thumbnail-2.png">
-                <div class="l-task-card__btn">
-                    <button type="button" class="task-card__btn btn btn-block btn-outlined btn-outlined-primary btn-outlined--thick">Perform Task</button>
-                </div>
-            </article>
-        </div>
+                </article>
+
+                <article class="card card-rounded l-task-card task-card">
+                    <header class="l-task-card__header">
+                        <span data-user-action="like" class="l-task-card__avatar-wrapper task-card__avatar-wrapper">
+                            <img class="l-task-card__avatar" src="../assets/users-dp/user-dp-1.png">
+                        </span>
+                        <div class="l-task-card__user-info-wrapper">
+                            <h3 class="l-task-card__username task-card__username">Tran Mau Tri Tam</h3>
+                            <p class="l-task-card__user-action task-card__user-action">Like</p>
+                        </div>
+                        <span class="l-task-card__more-options icon i-more-vertical"></span>
+                    </header>
+                    <img class="l-task-card__task-thumbnail" src="../assets/task-thumbnails/task-thumbnail-2.png">
+                    <div class="l-task-card__btn">
+                        <button type="button" class="task-card__btn btn btn-block btn-outlined btn-outlined-primary btn-outlined--thick">Perform Task</button>
+                    </div>
+                </article>
+
+                <article class="card card-rounded l-task-card task-card">
+                    <header class="l-task-card__header">
+                        <span data-user-action="like" class="l-task-card__avatar-wrapper task-card__avatar-wrapper">
+                            <img class="l-task-card__avatar" src="../assets/users-dp/user-dp-1.png">
+                        </span>
+                        <div class="l-task-card__user-info-wrapper">
+                            <h3 class="l-task-card__username task-card__username">Tran Mau Tri Tam</h3>
+                            <p class="l-task-card__user-action task-card__user-action">Like</p>
+                        </div>
+                        <span class="l-task-card__more-options icon i-more-vertical"></span>
+                    </header>
+                    <img class="l-task-card__task-thumbnail" src="../assets/task-thumbnails/task-thumbnail-2.png">
+                    <div class="l-task-card__btn">
+                        <button type="button" class="task-card__btn btn btn-block btn-outlined btn-outlined-primary btn-outlined--thick">Perform Task</button>
+                    </div>
+                </article>
+
+
+                <article class="card card-rounded l-task-card task-card">
+                    <header class="l-task-card__header">
+                        <span data-user-action="like" class="l-task-card__avatar-wrapper task-card__avatar-wrapper">
+                            <img class="l-task-card__avatar" src="../assets/users-dp/user-dp-1.png">
+                        </span>
+                        <div class="l-task-card__user-info-wrapper">
+                            <h3 class="l-task-card__username task-card__username">Tran Mau Tri Tam</h3>
+                            <p class="l-task-card__user-action task-card__user-action">Like</p>
+                        </div>
+                        <span class="l-task-card__more-options icon i-more-vertical"></span>
+                    </header>
+                    <img class="l-task-card__task-thumbnail" src="../assets/task-thumbnails/task-thumbnail-2.png">
+                    <div class="l-task-card__btn">
+                        <button type="button" class="task-card__btn btn btn-block btn-outlined btn-outlined-primary btn-outlined--thick">Perform Task</button>
+                    </div>
+                </article>
+
+
+                <article class="card card-rounded l-task-card task-card">
+                    <header class="l-task-card__header">
+                        <span data-user-action="like" class="l-task-card__avatar-wrapper task-card__avatar-wrapper">
+                            <img class="l-task-card__avatar" src="../assets/users-dp/user-dp-1.png">
+                        </span>
+                        <div class="l-task-card__user-info-wrapper">
+                            <h3 class="l-task-card__username task-card__username">Tran Mau Tri Tam</h3>
+                            <p class="l-task-card__user-action task-card__user-action">Like</p>
+                        </div>
+                        <span class="l-task-card__more-options icon i-more-vertical"></span>
+                    </header>
+                    <img class="l-task-card__task-thumbnail" src="../assets/task-thumbnails/task-thumbnail-2.png">
+                    <div class="l-task-card__btn">
+                        <button type="button" class="task-card__btn btn btn-block btn-outlined btn-outlined-primary btn-outlined--thick">Perform Task</button>
+                    </div>
+                </article>
+
+                <article class="card card-rounded l-task-card task-card">
+                    <header class="l-task-card__header">
+                        <span data-user-action="like" class="l-task-card__avatar-wrapper task-card__avatar-wrapper">
+                            <img class="l-task-card__avatar" src="../assets/users-dp/user-dp-1.png">
+                        </span>
+                        <div class="l-task-card__user-info-wrapper">
+                            <h3 class="l-task-card__username task-card__username">Tran Mau Tri Tam</h3>
+                            <p class="l-task-card__user-action task-card__user-action">Like</p>
+                        </div>
+                        <span class="l-task-card__more-options icon i-more-vertical"></span>
+                    </header>
+                    <img class="l-task-card__task-thumbnail" src="../assets/task-thumbnails/task-thumbnail-2.png">
+                    <div class="l-task-card__btn">
+                        <button type="button" class="task-card__btn btn btn-block btn-outlined btn-outlined-primary btn-outlined--thick">Perform Task</button>
+                    </div>
+                </article>
+
+                <article class="card card-rounded l-task-card task-card">
+                    <header class="l-task-card__header">
+                        <span data-user-action="like" class="l-task-card__avatar-wrapper task-card__avatar-wrapper">
+                            <img class="l-task-card__avatar" src="../assets/users-dp/user-dp-1.png">
+                        </span>
+                        <div class="l-task-card__user-info-wrapper">
+                            <h3 class="l-task-card__username task-card__username">Tran Mau Tri Tam</h3>
+                            <p class="l-task-card__user-action task-card__user-action">Like</p>
+                        </div>
+                        <span class="l-task-card__more-options icon i-more-vertical"></span>
+                    </header>
+                    <img class="l-task-card__task-thumbnail" src="../assets/task-thumbnails/task-thumbnail-2.png">
+                    <div class="l-task-card__btn">
+                        <button type="button" class="task-card__btn btn btn-block btn-outlined btn-outlined-primary btn-outlined--thick">Perform Task</button>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 </body>
 </html>
