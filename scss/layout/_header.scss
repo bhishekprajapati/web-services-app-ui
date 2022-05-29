@@ -1,16 +1,29 @@
 .l-primary-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: min(px-to-rem(25px), rounded-div(11, 375)*100%) 
              min(px-to-rem(110px), rounded-div(15, 375)*100%);
+
+    &__logo {
+        // flex: 2%;
+        width: 10%;
+    }
+
+
 
     &__nav {
         // white-space: nowrap;
         display: none;
-        
+        // flex: 60%;
+        width: 57%;
+        text-align: right;
+
         & > .link {
-            margin: 0 10%;
+            margin: 0 5%;
+
+            & > .link-icon {
+                vertical-align: middle;
+            }
         }
 
         @include up-media("sm") {
@@ -18,17 +31,49 @@
         }
     }
 
-    &__add-points {
-        padding: 2%;
-        border-radius: px-to-rem(15px);
-    }
 
     &__user-balance {
-        padding: px-to-rem(5px);
+        padding: min(2%, 0.5rem) min(2%, 0.5rem);
+        margin-left: auto;
+        border-radius: px-to-rem(15px);
+        width: 40%;
+        max-width: 10rem;
+        .icon {
+            vertical-align: middle;
+        }
+    }
+
+
+    &__add-points {
+        padding: 2%;
+        border-radius: px-to-rem(8px);
+        margin-right: 8%;
     }
 
     &__user-dp-wrapper {
         margin: 0 1% 0 2%;
+        width: calc(2vw + 1rem);
+        height: calc(2vw + 1rem);
+        overflow: hidden;
+        border-radius: 50%;
+        display: none;
+
+        @include up-media("sm") {
+            display: inline-block;
+        }
+    }
+
+    &__user-dp {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__user-profile-btn {
+        display: none;
+
+        @include up-media("sm") {
+            display: inline-block;
+        }
     }
 }
 

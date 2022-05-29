@@ -12,6 +12,8 @@
 
     &__user-balance{
         background-color: var(--c-th-user-balance-badge-bg);
+        color: var(--c-th-btn-text);
+        font-weight: 500;
     }
 }
 
