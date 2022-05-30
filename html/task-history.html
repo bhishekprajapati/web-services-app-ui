@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/news.css">
+    <title>Task History | Pro Web</title>
+</head>
+<body class="light-theme">
+
+    <header class="site-header">
+        <div class="l-primary-header header-bg">
+            <a href="./index.html" class="l-primary-header__logo">
+                <img src="../assets/site-logo.svg" alt="site-logo">
+                <span class="section-title fs-6 fw-700">Pro Web</span>
+            </a>
+            <nav class="l-primary-header__nav">
+                <a href="./index.html" class="link">
+                    <span class="link-icon icon i-grid">
+                    </span>
+                    <span>
+                        Task List
+                    </span>
+                </a>
+
+                <a href="./news.html" class="link is-active">
+                    <span class="link-icon icon i-globe is-active">
+                    </span>
+                    <span>
+                        News
+                    </span>
+                </a>
+
+                <a href="#" class="link">
+                    <span class="link-icon icon i-question-mark">
+                    </span>
+                    <span>
+                        Help
+                    </span>
+                </a>
+            </nav>
+
+            <span class="l-primary-header__user-balance fs-7">
+                <a class="l-primary-header__add-points">
+                    <span class="icon i-plus"></span>
+                </a>
+                <span class="icon i-coin-stack"></span>
+                2022
+            </span>
+
+            <!-- balance -->
+            <span class="l-primary-header__user-dp-wrapper">
+                <img class="l-primary-header__user-dp" src="../assets/20211117_103619.jpg" alt="user-dp">
+            </span>
+
+            <input id="user-settings-menu" type="checkbox">
+
+            <!-- menu toggle -->
+            <label class="l-primary-header__user-profile-btn" for="user-settings-menu">    
+                <span class="icon i-arrow-down"></span>
+            </label>
+
+            <div class="user-settings-menu card card-rounded shadow-2">
+
+                <div class="menu-item">
+                    <input type="checkbox" onchange="document.body.classList.toggle('dark-theme')" id="theme-toggler">
+                    <label class="theme-toggle link is-active" for="theme-toggler">
+                        <span class="link-icon icon i-sun is-active">
+                        </span>
+                        <span>
+                            Dark Mode
+                        </span>
+
+                        <span class="theme-toggle__btn"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="l-secondary-header header-bg">
+            <nav class="l-secondary-header__nav">
+                <a href="#" class="link is-active">
+                    <span class="link-icon icon i-grid is-active">
+                    </span>
+                    <span>
+                        Task List
+                    </span>
+                </a>
+
+                <a href="#" class="link">
+                    <span class="link-icon icon i-globe">
+                    </span>
+                    <span>
+                        News
+                    </span>
+                </a>
+
+                <a href="#" class="link">
+                    <span class="link-icon icon i-question-mark">
+                    </span>
+                    <span>
+                        Help
+                    </span>
+                </a>
+
+                <a href="#" class="link">
+                    <span class="link-icon icon i-menu">
+                    </span>
+                    <span>
+                        Help
+                    </span>
+                </a>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
