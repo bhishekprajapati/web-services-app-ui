@@ -8,8 +8,8 @@
   "private": true,
   "scripts": {
     "build-sass": "yarn dashboard-scss && yarn news-scss",
-    "dashboard-scss": "sass ./scss/pages/dashboard.scss ./css/dashboard.css",
-    "news-scss": "sass ./scss/pages/news.scss ./css/news.css -w",
+    "dashboard-scss": "sass ./scss/dashboard.scss ./css/dashboard.css",
+    "news-scss": "sass ./scss/news.scss ./css/news.css -w",
     "optimize-all-svgs": "yarn optimize-statefull-svgs && yarn optimize-stateless-svgs && yarn optimize-stateless-and-themeless-svgs",
     "optimize-statefull-svgs": "svgo -f ./assets/icons/statefull -o ./assets/icons-min/statefull",
     "optimize-stateless-svgs": "svgo -f ./assets/icons/stateless -o ./assets/icons-min/stateless",

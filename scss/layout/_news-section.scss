@@ -1,0 +1,19 @@
+.l-news {
+    &__grid {
+        --gap: 4%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: var(--gap);
+    
+        & > .l-news-card {
+            width: calc((100% - var(--gap))/2);
+            margin-bottom: var(--gap);
+
+            @include up-media("sm") {
+                width: calc((100% - var(--gap)*2)/3);
+            }
+        } 
+    }
+}

@@ -1,0 +1,16 @@
+.l-section {
+    font-size: clamp(px-to-rem(22px), 0.5rem + rounded-div(14, 375)*100vw ,px-to-rem(26px));
+    padding: rounded-div(30, 22)*1em rounded-div(15, 22)*1em;
+
+    &__header {
+        margin-bottom: 2%;    
+    }
+
+    @include up-media("sm") {
+        padding: rounded-div(30, 22)*1em rounded-div(15, 22)*2.5em;
+    }  
+    
+    @include up-media("md") {
+        padding: rounded-div(30, 22)*1em rounded-div(15, 22)*3em;
+    } 
+}

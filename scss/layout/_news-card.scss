@@ -1,0 +1,21 @@
+.l-news-card {
+    padding: calc(px-to-rem(5px) + 1.2%);
+    
+    &__thumbnail-wrapper {
+        overflow: hidden;
+        min-height: px-to-rem(100px);
+        height: calc(px-to-rem(68px) + rounded-div(32, 375)*100vw);
+        border-radius: px-to-rem(15px);
+    }
+    
+    &__thumbnail {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__header {
+        padding: calc(px-to-rem(5px) + 1.6%);
+    }
+}

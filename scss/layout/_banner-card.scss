@@ -1,0 +1,29 @@
+.l-banner-card {
+    &__img {
+        height: calc(px-to-rem(80px) + rounded-div(80, 375)*100vw);
+        max-height: 50vh;
+
+        @include up-media("md") {
+            width: 65%;
+        }
+    }
+
+    &__content {
+        @include up-media("md") {
+            width: 35%;
+        }
+    }
+
+    &__headline {
+        line-height: 133%;
+        margin-bottom: 4%;
+    }
+
+    &__description {
+        line-height: 133%;
+    }
+
+    @include up-media("md") {
+        display: flex;
+    }
+}

@@ -1,0 +1,8 @@
+.news-card {
+    &__headline {
+        color: var(--c-th-text-primary);
+    }
+    &__time {
+        color: var(--c-th-text-secondary);
+    }
+}

@@ -1,10 +1,11 @@
 @use "sass:list";
 
-@include typography-at-bp(); // outputs without media queries
+@include typography-at-bp(); // output without media queries
 @include typography-at-bp("xs");
 @include typography-at-bp("sm");
 @include typography-at-bp("md");
 @include typography-at-bp("lg");
+@include typography-at-bp("xxl");
 
 
 @each $weight in $font-weight {
